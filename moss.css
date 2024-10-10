@@ -1,0 +1,67 @@
+h1{
+    text-align: left;
+}
+
+img{
+    float: left;
+    width: 140px;
+    height: 70px;
+
+}
+body{
+    background-color: #676767;
+}
+li{
+    display: inline;
+    float: left;
+}
+li a{
+
+    padding: 0px 20px;
+    background-color: grey;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    font-style: oblique;
+}
+a:link{
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited{
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover{
+    color: grey;
+    background-color: transparent;
+    text-decoration:none;
+  }
+  
+  a:active{
+    color: grey;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .jumbotron{
+    background-color: #52631d;
+    height: 140px;
+  }
+  table{
+    width: 75%;
+    text-align: center;
+  }
+a,nav{
+  padding: 0px 20px;
+  background-color: #52631d;
+  font-size: 30px;
+  display: block;
+  text-align: center;
+  font-style: oblique;
+  display: inline;
+  float: left;
+}
