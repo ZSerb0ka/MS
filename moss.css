@@ -60,3 +60,26 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
 }
+#fooldal {
+  color: black;
+  font-weight: 900;
+}
+#kapcsolat {
+  color:black;
+  font-weight: 900;
+}
+#termekek{
+  color:black;
+  font-weight: 900;
+}
+a {
+  box-shadow: inset 0 0 0 0 green;
+  color: black;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+a:hover {
+  box-shadow: inset 100px 0 0 0 green;
+  color: white;
+}
