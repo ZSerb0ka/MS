@@ -60,7 +60,7 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
 }
-#fooldal {
+#fooldal,#kosar {
   color: black;
   font-weight: 900;
 }
@@ -82,4 +82,15 @@ a {
 a:hover {
   box-shadow: inset 100px 0 0 0 green;
   color: white;
+}
+h3{
+  color: black
+}
+#kosar {
+  color: black;
+  font-weight: 900;
+}
+.listacska{
+  display: inline-block;
+  text-align: left;
 }
