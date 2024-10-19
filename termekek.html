@@ -8,7 +8,43 @@
     <link rel="stylesheet" href="moss.css">
     <title>Termékek</title>
     <style>
+        /* Rács nézet stílusa */
+        .grid-view .product {
+            flex: 1 1 25%; /* 4 oszlopos rács */
+            padding: 10px;
+        }
 
+        /* Lista nézet stílusa */
+        /* Lista nézet stílusa */
+        .list-view .product {
+            flex: 1 1 100%; /* Egész szélesség */
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between; /* Elemeket szétválasztja */
+            padding: 15px;
+        }
+
+        .list-view .product img {
+            width: 150px; /* Kis kép a lista nézethez */
+            margin-right: 20px;
+        }
+
+        .list-view .product h2,
+        .list-view .product p {
+            flex: 1; /* Szövegek teljes szélességben */
+        }
+
+        .list-view .product button {
+            flex: 0 0 auto; /* Gomb fix szélessége */
+            width: 150px; /* Gomb szélessége */
+        }
+
+
+        /* Elrendezésváltó gombok */
+        .layout-toggle {
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
@@ -25,9 +61,15 @@
 </nav>
 
 <div class="container col-md-9">
-    <div class="row">
+    <!-- Elrendezésváltó gombok -->
+    <div class="layout-toggle">
+        <button id="gridView" class="btn btn-primary">Rács nézet</button>
+        <button id="listView" class="btn btn-secondary">Lista nézet</button>
+    </div>
+
+    <div class="row product-container grid-view">
         <!-- Első termék -->
-        <div class="product col-md-3">
+        <div class="product col-md-">
             <img src="img/termékek/Asiimov AK.png" alt="Asiimov AK" >
             <h2>AK-47 | Asiimov</h2>
             <p>Float: FT 0.227</p>
@@ -36,79 +78,78 @@
          </div>
 
         <!-- Második termék -->
-        <div class="product col-md-3">
+        <div class="product col-md-">
             <img src="img/termékek/Emphorosaur M4A1-S.png" alt="wildfire">
             <h2>M4A1-S | Emphorosaur</h2>
             <p>Float: MW 0.092</p>
             <p>Ár: 0,82 €</p>
             <button class="btn btn-outline-success">Kosárba</button>
         </div>
-
         <!-- Harmadik termék -->
-        <div class="product col-md-3">
+        <div class="product col-md-">
             <img src="img/termékek/Fade R8 Revolver.png" alt="Termék 3">
             <h2>R8 Revolver | Fade</h2>
             <p>Float: 0.067 98,1% Fade</p>
             <p>Ár: 13,04 €</p>
             <button class="btn btn-outline-success">Kosárba</button>
         </div>
-        <div class="product col-md-3">
+        <div class="product col-md-">
             <img src="img/termékek/Hydroponic Ak.png" alt="Termék 3">
             <h2>AK-47 | Hydroponic</h2>
             <p>Float: 0.052</p>
             <p>Ár: 1827,76 €</p>
             <button class="btn btn-outline-success">Kosárba</button>
         </div>
-        <div class="product col-md-3">
+        <div class="product col-md-">
             <img src="img/termékek/Printstream M4A1-S.png" alt="Termék 3">
             <h2>M4A1-S | Printstream</h2>
             <p>Float: 0.391 StatTrak™</p>
             <p>Ár: 217,06 €</p>
             <button class="btn btn-outline-success">Kosárba</button>
         </div>
-        <div class="product col-md-3">
+        <div class="product col-md-">
             <img src="img/termékek/Tango R8 Revolver.png" alt="Termék 3">
             <h2>R8 Revolver | Tango</h2>
             <p>Float: 0.694</p>
             <p>Ár: 4,32 €</p>
             <button class="btn btn-outline-success">Kosárba</button>
         </div>
-        <div class="product col-md-3">
+        <div class="product col-md-">
             <img src="img/termékek/talontigertooth.png" alt="Termék 3">
             <h2>Talon Knife | Tiger Tooth</h2>
             <p>Float: 0.052</p>
             <p>Ár: 1827,76 €</p>
             <button class="btn btn-outline-success">Kosárba</button>
         </div>
-        <div class="product col-md-3">
+        <div class="product col-md-">
             <img src="img/termékek/butterflyfade.png" alt="Termék 3">
             <h2>Butterfly Knife | Fade</h2>
             <p>Float: 0.006 82,5% Fade</p>
             <p>Ár: 3154,42 €</p>
             <button class="btn btn-outline-success">Kosárba</button>
         </div>
-        <div class="product col-md-3">
+        <div class="product col-md-">
             <img src="img/termékek/vicegloves.png" alt="Termék 3">
             <h2>Sports Gloves | Vice </h2>
             <p>Float: 0.770 </p>
             <p>Ár: 377,61 €</p>
             <button class="btn btn-outline-success">Kosárba</button>
         </div>
-        <div class="product col-md-3">
+        <div class="product col-md-">
             <img src="img/termékek/mac10heat.png" alt="Termék 3">
             <h2>Mac-10 | Heat</h2>
             <p>Float: 0.149 </p>
             <p>Ár: 4,81 €</p>
             <button class="btn btn-outline-success">Kosárba</button>
         </div>
-        <div class="product col-md-3">
+        <div class="product col-md-">
             <img src="img/termékek/czchalice.png" alt="Termék 3">
             <h2>CZ-75 Auto | Chalice</h2>
             <p>Float: 0.001</p>
             <p>Ár: 483,14 €</p>
             <button class="btn btn-outline-success">Kosárba</button>
         </div>
-        <div class="product col-md-3">
+        <div class="product col-md-">
             <img src="img/termékek/survivalbluesteel.png" alt="Termék 3">
             <h2>Survival Knife | Blue Steel</h2>
             <p>Float: 0.997</p>
@@ -116,13 +157,28 @@
             <button class="btn btn-outline-success">Kosárba</button>
         </div>
 
+
     </div>
 </div>
 
 
-<footer>
-    <p></p>
-</footer>
+
+<script>
+    // JavaScript az elrendezés váltásához
+    const gridViewButton = document.getElementById('gridView');
+    const listViewButton = document.getElementById('listView');
+    const productContainer = document.querySelector('.product-container');
+
+    gridViewButton.addEventListener('click', () => {
+        productContainer.classList.add('grid-view');
+        productContainer.classList.remove('list-view');
+    });
+
+    listViewButton.addEventListener('click', () => {
+        productContainer.classList.add('list-view');
+        productContainer.classList.remove('grid-view');
+    });
+</script>
 
 </body>
 </html>

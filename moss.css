@@ -53,13 +53,7 @@ nav a {
 .product button:hover {
   background-color: #218838;
 }
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-}
+
 #fooldal,#kosar {
   color: black;
   font-weight: 900;
