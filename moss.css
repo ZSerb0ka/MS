@@ -132,3 +132,14 @@ body.dark-mode .product{
 #toggleButton:focus {
   outline: none;
 }
+.dc{
+  color:white;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  transition: none
+}
+.dc:hover {
+  box-shadow: none;
+  color: white;
+}
