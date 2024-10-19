@@ -54,18 +54,23 @@
 </header>
 
 <nav>
+    <div class="theme-switcher">
+        <button id="toggleButton">
+            <span id="icon">🌞</span>
+        </button>
+    </div>
     <a href="moss.html">Főoldal</a>
     <a href="termekek.html" id="termekek">Termékek</a>
     <a href="kapcsolat.html">Kapcsolat</a>
     <a href="kosar.html">Kosár</a>
+    <a class="eze" href="feltoltes.html">Feltöltés</a>
 </nav>
+            <!-- Elrendezésváltó gombok -->
+            <button id="gridView" class="mt-5 ml-5 balra btn btn-outline-success">&#9871;</button>
+            <button id="listView" class="mt-5 ml-2 balra btn btn-outline-success">&#9776;</button>
 
 <div class="container col-md-9">
-    <!-- Elrendezésváltó gombok -->
-    <div class="layout-toggle">
-        <button id="gridView" class="btn btn-primary">Rács nézet</button>
-        <button id="listView" class="btn btn-secondary">Lista nézet</button>
-    </div>
+
 
     <div class="row product-container grid-view">
         <!-- Első termék -->
@@ -163,22 +168,9 @@
 
 
 
-<script>
-    // JavaScript az elrendezés váltásához
-    const gridViewButton = document.getElementById('gridView');
-    const listViewButton = document.getElementById('listView');
-    const productContainer = document.querySelector('.product-container');
+<script src="listazas.js"></script>
+<script src="darkmode.js"></script>
 
-    gridViewButton.addEventListener('click', () => {
-        productContainer.classList.add('grid-view');
-        productContainer.classList.remove('list-view');
-    });
-
-    listViewButton.addEventListener('click', () => {
-        productContainer.classList.add('list-view');
-        productContainer.classList.remove('grid-view');
-    });
-</script>
 
 </body>
 </html>

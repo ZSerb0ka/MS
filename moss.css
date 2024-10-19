@@ -10,16 +10,17 @@ header {
   text-align: center;
   padding: 1rem;
 }
-nav {
+nav{
   background-color: #50C878;
   padding: 1rem;
   text-align: center;
 }
-nav a {
+nav a{
   color: white;
   margin: 0 1rem;
   text-decoration: none;
   font-size: 1.2rem;
+  text-align: center;
 }
 .container {
   width: 90%;
@@ -31,6 +32,7 @@ nav a {
   margin: 1rem 0;
   padding: 1rem;
   text-align: center;
+  transition: background-color 0.3s, color 0.3s;
 }
 .product img {
   max-width: 200px;
@@ -53,7 +55,13 @@ nav a {
 .product button:hover {
   background-color: #218838;
 }
-
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
 #fooldal,#kosar {
   color: black;
   font-weight: 900;
@@ -87,4 +95,39 @@ h3{
 .listacska{
   display: inline-block;
   text-align: left;
+}
+.eze{
+  float: right;
+}
+.balra{
+  float:left
+}
+body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+body.dark-mode {
+  background-color: black;
+  color: black;
+}
+body.dark-mode .product{
+  background-color: black;
+  color: white;
+}
+.theme-switcher {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#toggleButton {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#toggleButton:focus {
+  outline: none;
 }

@@ -1,0 +1,37 @@
+/* Rács nézet stílusa */
+.grid-view .product {
+    flex: 1 1 25%; /* 4 oszlopos rács */
+    padding: 10px;
+}
+
+/* Lista nézet stílusa */
+/* Lista nézet stílusa */
+.list-view .product {
+    flex: 1 1 100%; /* Egész szélesség */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* Elemeket szétválasztja */
+    padding: 15px;
+}
+
+.list-view .product img {
+    width: 150px; /* Kis kép a lista nézethez */
+    margin-right: 20px;
+}
+
+.list-view .product h2,
+.list-view .product p {
+    flex: 1; /* Szövegek teljes szélességben */
+}
+
+.list-view .product button {
+    flex: 0 0 auto; /* Gomb fix szélessége */
+    width: 150px; /* Gomb szélessége */
+}
+
+
+/* Elrendezésváltó gombok */
+.layout-toggle {
+    margin-bottom: 20px;
+}
