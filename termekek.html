@@ -75,13 +75,13 @@
 
     <div class="row product-container grid-view">
         <!-- Első termék -->
-        <div class="product col-md-">
+        <div class="product col-md-" data-id="1" data-name="Termék 1" data-price="1500">
             <img src="img/termékek/Asiimov AK.png" alt="Asiimov AK" >
             <h2>AK-47 | Asiimov</h2>
             <p>Float: FT 0.227</p>
             <p>Ár: 33,26 €</p>
-            <button class="btn btn-outline-success">Kosárba &#128722</button>
-         </div>
+            <button onclick="addToCart(1, 'AK-47 | Asiimov', 3326)" class="btn btn-outline-success">Kosárba &#128722</button>
+        </div>
 
         <!-- Második termék -->
         <div class="product col-md-">
@@ -187,6 +187,7 @@
 
 <script src="listazas.js"></script>
 <script src="darkmode.js"></script>
+<script src="cart.js"></script>
 
 
 </body>
