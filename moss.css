@@ -116,6 +116,7 @@ body.dark-mode .product{
   background-color: black;
   color: white;
 }
+
 .theme-switcher {
   position: absolute;
   top: 10px;
@@ -144,5 +145,43 @@ body.dark-mode .product{
   color: white;
 }
 
+#cart-container {
+  position: relative; /* Ez kell a relatív elhelyezéshez */
+  padding-bottom: 50px; /* Hely biztosítása az összegnek lent */
+}
 
-
+.total-price {
+  position: absolute;
+  right: 0; /* Jobb oldalra helyezi */
+  bottom: 0; /* Alsó pozíció */
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  color: white;
+  background-color: grey; /* Egy kis háttérszín a jobb olvashatóságért */
+  border-radius: 5px;
+}
+.kosar{
+   text-align: center;
+   background-color: grey; /* Egy kis háttérszín a jobb olvashatóságért */
+   border-radius: 5px;
+   padding: 15px;
+   font-weight: bold;
+   font-size: 18px;
+   position: absolute;
+   top: 50%;           /* Vertikális középre igazítás */
+   left: 50%;          /* Horizontális középre igazítás */
+   transform: translate(-50%, -50%); /* A pontos középre igazítás */
+  margin-bottom: 100px;
+}
+.kosar2{
+  color:white;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  transition: none
+}
+.kosar2:hover {
+  box-shadow: none;
+  color: black;
+}
