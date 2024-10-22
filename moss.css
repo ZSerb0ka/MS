@@ -185,3 +185,6 @@ body.dark-mode .product{
   box-shadow: none;
   color: black;
 }
+.nincs{
+  list-style-type: none;
+}

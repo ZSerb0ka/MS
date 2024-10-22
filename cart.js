@@ -57,7 +57,11 @@ function displayCart() {
     });
 
     // Végösszeg
-    cartContainer.innerHTML += `<p class="price total-price">Összesen: ${total.toFixed(2)} €</p>`;
+    cartContainer.innerHTML += `<p class="price total-price">Összesen: ${total.toFixed(2)} €<br>
+                                <a class="kosar2" href="fizetes.html">Tovább a fizetéshez <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+</svg></a>
+</p>`;
 
 }
 
